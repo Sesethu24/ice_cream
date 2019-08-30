@@ -1,0 +1,9 @@
+select {
+	font-size: 1em;
+	padding: 1em;
+	line-height: 2;
+	width: 12em;
+}
+body{
+    background-color: grey;
+}

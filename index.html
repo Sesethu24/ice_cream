@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="icecream.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script type="text/x-template" class="orderTemplate">
+    
+    <table>
+        <tr>
+            <td>flavour Total</td>
+            <td>{{flavour}}</td>
+        </tr>
+        <tr>
+            <td>topping Total</td>
+            <td>{{topping}}</td>
+          </tr>
+          <tr>
+                <td>container Total</td>
+                <td>{{container}}</td>
+              </tr>
+          <tr>
+              <td>Total</td>
+              <td>{{total}}</td>
+            </tr>
+    </table>
+</script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>The Ice Cream Widget</h1>
+    <div class="row">
+        <select class="selectFlavour">
+            <option value="">Select a flavour</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="chocolate">Chocolate</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <select class="selectContainer">
+            <option value=0>Select a container</option>
+            <option value=1>Plain cone</option>
+            <option value=2>Sugar cone</option>
+            <option value=3>Paper cup</option>
+            
+        </select>
+    </div>
+    <div>
+        <br>
+        <div class="row">
+            <div class="check">
+
+                    <input type="checkbox" class="topping" name="topping" value=1>Crumbed peanuts<br>
+                    <input type="checkbox" class="topping" name="topping" value=2>Caramal dip<br>
+                    <input type="checkbox" class="topping" name="topping" value=3>Chocolate Dip<br>
+                    <input type="checkbox" class="topping" name="topping" value=4>Smarties<br>
+                    <input type="checkbox" class="topping" name="topping" value=5>Oreos<br>
+                    <input type="checkbox" class="topping" name="topping" value=6>Astros<br><br>
+                    <input type="submit" class="submitBtn" value="get price">
+              
+            </div>
+        </div>
+        <table>
+			<tbody class="orderData">
+
+            </tbody>
+
+        </table>
+
+        <script src="icecream.js" charset="utf-8"></script>
+        <script src="icecream_dom.js" charset="utf-8"></script>
+</body>
+
+</html>
